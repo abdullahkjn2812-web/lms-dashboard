@@ -1,0 +1,107 @@
+export const currentUser = {
+  id: 'u1',
+  name: 'Alex Rivera',
+  email: 'alex.rivera@learncorp.com',
+  role: 'student',
+  avatar: 'https://i.pravatar.cc/120?u=alex',
+  title: 'Software Engineer',
+  department: 'Engineering',
+}
+
+export const users = [
+  {
+    id: 'u1',
+    name: 'Alex Rivera',
+    email: 'alex.rivera@learncorp.com',
+    role: 'student',
+    avatar: 'https://i.pravatar.cc/80?u=alex',
+    enrolledCourses: 4,
+    joinDate: '2025-11-12',
+    status: 'Active',
+  },
+  {
+    id: 'u2',
+    name: 'Jordan Miles',
+    email: 'jordan.miles@learncorp.com',
+    role: 'student',
+    avatar: 'https://i.pravatar.cc/80?u=jordan',
+    enrolledCourses: 6,
+    joinDate: '2025-08-03',
+    status: 'Active',
+  },
+  {
+    id: 'u3',
+    name: 'Sam Patel',
+    email: 'sam.patel@learncorp.com',
+    role: 'student',
+    avatar: 'https://i.pravatar.cc/80?u=sam',
+    enrolledCourses: 2,
+    joinDate: '2026-01-20',
+    status: 'Active',
+  },
+  {
+    id: 'u4',
+    name: 'Casey Wong',
+    email: 'casey.wong@learncorp.com',
+    role: 'student',
+    avatar: 'https://i.pravatar.cc/80?u=casey',
+    enrolledCourses: 3,
+    joinDate: '2025-06-15',
+    status: 'Inactive',
+  },
+  {
+    id: 'u5',
+    name: 'Admin User',
+    email: 'admin@learncorp.com',
+    role: 'admin',
+    avatar: 'https://i.pravatar.cc/80?u=admin',
+    enrolledCourses: 0,
+    joinDate: '2024-01-01',
+    status: 'Active',
+  },
+]
+
+export const adminStats = {
+  totalUsers: 2840,
+  totalCourses: 8,
+  paidCourses: 5,
+  freeCourses: 3,
+  revenue: 128450,
+  enrollments: 9632,
+  courseViews: 142800,
+}
+
+export const auditLogs = [
+  {
+    id: 'a1',
+    action: 'Course published',
+    actor: 'Admin User',
+    target: 'Operations Excellence',
+    timestamp: '2026-09-25 14:22',
+    ip: '10.0.12.4',
+  },
+  {
+    id: 'a2',
+    action: 'User role updated',
+    actor: 'Admin User',
+    target: 'Casey Wong → Inactive',
+    timestamp: '2026-09-24 09:10',
+    ip: '10.0.12.4',
+  },
+  {
+    id: 'a3',
+    action: 'Refund issued',
+    actor: 'Admin User',
+    target: 'INV-2026-0410',
+    timestamp: '2026-09-22 16:45',
+    ip: '10.0.12.4',
+  },
+  {
+    id: 'a4',
+    action: 'Price updated',
+    actor: 'Admin User',
+    target: 'Advanced TypeScript Patterns → $79',
+    timestamp: '2026-09-20 11:03',
+    ip: '10.0.12.4',
+  },
+]
