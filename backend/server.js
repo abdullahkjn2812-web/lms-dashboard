@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const requestLogger = require("./midleware/requestLogger");
+const courseRoutes = require("./routes/courseRoutes");
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.get("/api/health", (req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/auth/courses", courseRoutes);
 app.use((req, res) => {
   res.status(404).json({
     success: false,
