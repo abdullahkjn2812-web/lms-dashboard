@@ -7,10 +7,9 @@ const router = express.Router();
 router.post("/signup", signup);
 router.post("/login", login);
 router.get("/profile", authMidleware, getProfile);
-
 router.get("/Admin-test", authMidleware, allowRoles("admin"), (req, res) => {
   res.json({
-    message: "Access Denied granted",
+    message: "Admin Access granted",
   });
 });
 module.exports = router;
